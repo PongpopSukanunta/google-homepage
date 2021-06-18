@@ -4,43 +4,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav-bar">
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
-        <button>Sign in</button>
-    </div>
-        
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's Logo">
-
-    <form action="">
-        <input type="text" name="search-box" id="search-box">
-        <div>
-            <button type="button">Google Search</button>
-            <button type="button" onclick="alert('Hello World!')">I'm Feeling Lucky</button>
-        </div>
-    </form>
-
-    <p>Google offered in : <a href="#">English</a></p>
-
-    <div class="footer">
-        <div>
-            <p>Thailand</p>
+    <div class="flex-container">
+        <div class="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="#">Gmail</a></li>
+                <li class="nav-link"><a href="#">Images</a></li>
+                <li class="nav-link"><button>Sign in</button></li>
+            </ul>
         </div>
         
-        <div>
-            <span>
-                <a href="#">About</a>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">How Search Works</a>
-            </span>
-            <span>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Setting</a>
-            </span>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google's Logo">
+        
+        
+        <form>
+            <span class="material-icons">search</span>
+            
+            <input type="text" name="search-box" id="search-box">
+            
+            <span class="material-icons">mic</span>
+            
+            <div id="buttons">
+                <button type="button">Google Search</button>
+                <button type="button" onclick="alert('Hello World!')">I'm Feeling Lucky</button>
+            </div>
+            
+            
+        </form>
+        
+        <p>Google offered in : <a href="#">English</a></p>
+        
+        <div class="footer">
+            <div class="footer-text">
+                <p>Thailand</p>
+            </div>
+            
+            <div class="footer-text" id="bot-footer">
+                <ul id="left-footer">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search Works</a></li>
+                </ul>
+                <ul id="right-footer">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Setting</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
